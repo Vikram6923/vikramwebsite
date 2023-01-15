@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> E-Commerce | Blog </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class = "nav nav_top">
+        <div class="logo">
+            <a href="index.html"><img src="image/Logo2.png" width="150"></a>
+        </div>
+        <div class="nav_side">
+            <a href="About.html">About Us</a>
+            <a href="service.html">Services</a>
+            <a href="blog.html">Blogs</a>
+            <a href="contact.html">Contact us</a>
+            <a href="login.html">Login/Register</a>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="main_content">
+        </div>
+    </div>
+    <section>
+
+    <hr>
+    <div class="team">
+        <h2>Benefits of online business.</h2>
+        <div class="team_container">
+            <div class="team_content">
+            </div>
+        </div>
+    </div>
+    <h4 style="padding: 50px">It’s been two years since the pandemic, and COVID-19 continues to play a role in changing and redefining the ways we live, shop, survive and progress. 
+        Even as the new covid-boosted consumer trickles back to pre-covid physical shopping experiences, the quick and wide adoption of online shopping continues to persist and grow.
+    </h4>
+    <h4  style="padding: 50px">Growing internet penetration has been a key driver in enhancing digital adoption, not only for Indian consumers to shop, but also for Indian sellers to reach a wider market than before. 
+        As a young business in this ever-evolving shopping ecosystem, it is only wise to find a balance between your offline and online business. 
+        There are substantial and long-term benefits to both. But, whether you are a brick-and-mortar grocery store or a small business owner, the benefits of setting up an online shop to complement and support your offline business are compelling.
+    </h4>
+    <div class="keypoint">
+        <h2>IMPORTANT HIGHLIGHTS</h2>
+        <div class="key_container">
+            <div class="key_content">
+                <li>Expand your customer base</li>
+                <li>Anytime and anywhere business operations</li>
+                <li>Improves business image</li>
+                <li>Scale up cost-effectively</li>
+            </div>
+        </div>
+    </div>
+
+    <div class="feed">
+        <h2>FEEDBACK</h2>
+        <div class="feed_form">
+            <form name="submitform" method="POST">
+                <input type="text" name="Name" placeholder="Name"><br>
+                <input type="email" name="Email" placeholder="Email ID"><br>
+                <input type="number" name="Number" placeholder="Contact Number"><br>
+                <textarea rows="5" cols="7" name="Review" placeholder="Write your feedback"></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_logo">
+            <a href="index.html"><img src="Image/Logo2.png" width="150"></a>
+        </div>
+        <div class="pages">
+            <h3>Pages</h3>
+            <a href="About.html">About Us</a>|
+            <a href="service.html">Services</a>|
+            <a href="blog.html">Blogs</a>|
+            <a href="contact.html">Contact us</a>|
+            <a href="login.html">Login/Register</a>
+        </div>
+        <div class="doc">
+            <h3>Documents</h3>
+            <a href="">Privacy Policy</a>|
+            <a href="">Terms of Conditions</a>|
+            <a href="">Refund Policy</a>
+        </div>
+        <div class="social">
+            <h3>Follow Us</h3>
+            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </div>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <a href="https://api.WhatsApp.com/send?phone=+919417339530" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+            <a href="tel: +919417339530"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            <a href="mailto: 2020ucs0080@iitjammu.ac.in"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+        </div>
+        <hr>
+        <p>Copyright &copy; Vikram. All rights reserved.</p>
+    </footer>
+
+
+    </section>
+    <script type ="text/JavaScript">
+        const scriptURL =
+            'https://script.google.com/macros/s/AKfycbwNdeAqmJuYHoIO3xvgIDn7o3U9N_X1ELj9Gvr_CBNIDO7R3QDB3ECNlCX4q305VNk/exec'
+        const form = document.forms['submitform']
+     
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => alert(
+                    "Thanks for you valuable feedback!!!"))
+                .catch(error => console.error('Error!', error.message))
+        })
+     
+    </script>
+
+
+</body>
+
+</html>
